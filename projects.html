@@ -1,10 +1,48 @@
-<!DOCKTYPE html>
+ !DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Projects</title>
+    <meta charset="UTF-8">
+    <title>Projects</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        nav ul { list-style: none; padding: 0; display: flex; gap: 10px; }
+        nav a { text-decoration: none; color: black; padding: 5px 10px; }
+        nav a.current { background-color: #ddd; border-radius: 4px; }
+        section { margin-bottom: 30px; border: 1px solid #ccc; padding: 15px; }
+        img { max-width: 100%; height: auto; }
+    </style>
 </head>
 <body>
-  
+
+<!-- Navigation -->
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html" class="current">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<h1>My Projects</h1>
+
+<section>
+    <h2>Personal Profile Page</h2>
+    <img src="images/project1.jpg" alt="Screenshot of personal profile page">
+    <p>This is a simple personal profile webpage created using HTML. It includes my background, skills, education experience and basic contact information.</p>
+</section>
+
+<section>
+    <h2>Practice Layout Project</h2>
+    <img src="images/project2.jpg" alt="Screenshot of practice layout project">
+    <p>A practice webpage built to improve my understanding of HTML structure and page layout design.</p>
+</section>
+
+<section>
+    <h2>Contact Form Project</h2>
+    <img src="images/project3.jpg" alt="Screenshot of contact form project">
+    <p>A basic contact form created while learning how to use form elements such as input fields, dropdowns, and textareas.</p>
+</section>
+
 </body>
 </html>
