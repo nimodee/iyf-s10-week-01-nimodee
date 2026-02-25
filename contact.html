@@ -1,47 +1,76 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Contact Us</title>
+    <title>Contact</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        nav ul { list-style: none; padding: 0; display: flex; gap: 10px; }
+        nav a { text-decoration: none; color: black; padding: 5px 10px; }
+        nav a.current { background-color: #ddd; border-radius: 4px; }
+        fieldset { margin-bottom: 20px; padding: 10px; }
+        label { display: block; margin-top: 10px; }
+        input, select, textarea { width: 100%; padding: 5px; margin-top: 5px; }
+        button { margin-top: 10px; padding: 8px 15px; }
+    </style>
 </head>
 <body>
 
-<h1>Contact Us</h1>
+<!-- Navigation -->
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html" class="current">Contact</a></li>
+    </ul>
+</nav>
 
+<h1>Contact Me</h1>
+
+<!-- Contact Form -->
 <form>
     <fieldset>
-        <legend>Contact Information</legend>
+        <legend>Personal Information</legend>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" placeholder="Your Name" required>
 
-        <label for="fullname">Full Name:</label><br>
-        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="you@example.com" required>
 
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" placeholder="Enter your email address" required><br><br>
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" placeholder="Optional">
+    </fieldset>
 
-        <label for="phone">Phone:</label><br>
-        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number"><br><br>
+    <fieldset>
+        <legend>Message</legend>
+        <label for="subject">Subject:</label>
+        <select id="subject">
+            <option>General Inquiry</option>
+            <option>Project Feedback</option>
+            <option>Other</option>
+        </select>
 
-        <label for="subject">Subject:</label><br>
-        <select id="subject" name="subject">
-            <option value="">--Select a subject--</option>
-            <option value="general">General Inquiry</option>
-            <option value="support">Support</option>
-            <option value="feedback">Feedback</option>
-        </select><br><br>
+        <label for="message">Message:</label>
+        <textarea id="message" placeholder="Type your message here..." minlength="50" required></textarea>
 
-        <label for="message">Message:</label><br>
-        <textarea id="message" name="message" placeholder="Write your message here..." rows="5" minlength="50" required></textarea><br><br>
-
-        <label>
-            <input type="checkbox" name="newsletter">
-            Subscribe to our newsletter
-        </label><br><br>
+        <input type="checkbox" id="newsletter">
+        <label for="newsletter">Subscribe to newsletter</label><br>
 
         <button type="submit">Submit</button>
-
     </fieldset>
 </form>
+
+<!-- Social Media Links -->
+<h2>Connect with Me</h2>
+<ul>
+    <li><a href="#">Facebook</a></li>
+    <li><a href="#">Twitter</a></li>
+    <li><a href="#">LinkedIn</a></li>
+</ul>
+
+<!-- Location -->
+<p>Location: Nairobi, Kenya (GMT+3)</p>
 
 </body>
 </html>
